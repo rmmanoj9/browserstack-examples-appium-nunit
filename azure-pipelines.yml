@@ -9,7 +9,7 @@ steps:
   name: 'BrowserStackConfiguration'
   displayName: 'BrowserStack Configuration'
   inputs:
-    BrowserStackServiceEndPoint: 'BStack Demo Account'
+    BrowserStackServiceEndPoint: 'BrowserStack'
 
 - task: DotNetCoreCLI@2
   name: 'RestoreProject'
