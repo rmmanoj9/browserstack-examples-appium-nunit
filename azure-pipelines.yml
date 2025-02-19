@@ -5,6 +5,14 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+- task: NuGetToolInstaller@1
+  inputs:
+    versionSpec: '5.8'
+
+- task: NodeTool@0
+  inputs:
+    versionSource: 'spec'
+    versionSpec: '6.x'
 - task: BrowserStackConfig@0
   name: 'BrowserStackConfiguration'
   displayName: 'BrowserStack Configuration'
